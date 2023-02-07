@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onmouseover="check(prompt)">월|화|수|목|금|토|일</h1>
+    <hr>
+</body>
+<script>
+    function check(prompt) {
+        let inputDay = `${prompt("요일을 입력하세요", "월")}`;
+        var result = "";
+
+        switch (inputDay) {
+            case "금", "토", "일":
+                result = '휴일'
+                break;
+        
+            default:
+                result = '출근'
+                break;
+        }
+    return document.write(inputDay + "요일은" + result);
+    }
+    
+
+
+</script>
+</html>

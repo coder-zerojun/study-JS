@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습 3</title>
+</head>
+<body>
+    <h1>분석결과</h1>
+    <hr>
+</body>
+<script>
+//     function checkPassword(prompt) {
+//         let check = `${prompt("비밀번호를 입력해주세요", "꼬끼오")}`;
+//         var condition = '';
+        
+//         while(check != '호랑이') {
+//             prompt("비밀번호를 입력해주세요", "꼬끼오");
+//         }
+//     condition = '통과!';
+
+//     return condition;
+// }
+
+
+const code = "호랑이";
+    while(true){
+        let myCode = prompt("암호를 대시오.");
+        if(myCode == code) {
+            document.write("<h2>통과</h2>")
+            break;
+        }
+    }
+
+</script>
+</html>
